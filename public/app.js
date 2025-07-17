@@ -8,3 +8,10 @@ function something()
 
 	alert(x);
 }
+
+function add_to_cart() 
+{
+
+
+	alert('Товар добавлен в корзину');
+}
