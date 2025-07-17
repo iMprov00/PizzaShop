@@ -3,8 +3,23 @@
 <div class="row">
 	<% @products.each do |p| %>
 		<div class="col-md-3">
-			<%= p.title %>
+			<div>
+				<%= p.title %>
+			</div>
+
+			<div>
+				<img src="<%= p.path_to_image %>"style="width: 100%; max-width: 200px;"/>
+			</div>
+
+			<div>
+				<%= p.description %>
+			</div>
+
+				<div>
+				<%= p.price %>
+			</div>
 		</div>
+
 	<%end%>
 </div>
 <button class="btn btn-primary" onclick="something()">Нажми на меня!</button>
