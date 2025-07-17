@@ -9,9 +9,9 @@ function something()
 	alert(x);
 }
 
-function add_to_cart() 
+function add_to_cart(id) 
 {
 
 
-	alert('Товар добавлен в корзину');
+	alert('Вы выбрали пицу с id: ' + id);
 }
