@@ -25,7 +25,7 @@ post '/place_order' do
 	@order = Order.create params[:order]
 
 
-	erb "Благодарим за заказ! Оператор скоро свяжется с вами."
+	erb :order_placed
 
 end
 
