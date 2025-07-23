@@ -20,15 +20,18 @@ get '/' do
 
 end
 
-get '/about' do 
+post '/place_order' do 
 
-	erb :about
+	@order = Order.create params[:order]
+
+
+	erb "Благодарим за заказ! Оператор скоро свяжется с вами."
 
 end
 
 post '/cart' do 
-	orders_input = params[:orders]
-	@items = parse_orders_line orders_input
+	@orders_input = params[:orders]
+	@items = parse_orders_line @orders_input
 
 	@total = 0
 	@quantity_all = 0
