@@ -82,5 +82,6 @@ function cancel_order()
 	window.localStorage.clear();
 	update_orders_button();
 	update_orders_input();
+	$('#cart').text('Ваша корзина пустая...')
 	return false;
 }
