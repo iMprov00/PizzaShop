@@ -33,6 +33,10 @@ post '/cart' do
 	@orders_input = params[:orders]
 	@items = parse_orders_line @orders_input
 
+	if @items.length == 0
+		return erb :cart_is_empty
+	end
+
 	@total = 0
 	@quantity_all = 0
 
