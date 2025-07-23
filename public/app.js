@@ -76,3 +76,9 @@ function update_orders_button()
 	var text = 'Корзина (' + cart_get_number_of_items() + ')';
 	$('#orders_button').val(text);
 }
+
+function cancel_order()
+{
+	alert('Каво!')
+	return false;
+}
