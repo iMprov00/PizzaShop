@@ -79,6 +79,8 @@ function update_orders_button()
 
 function cancel_order()
 {
-	alert('Каво!')
+	window.localStorage.clear();
+	update_orders_button();
+	update_orders_input();
 	return false;
 }
